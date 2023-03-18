@@ -1,0 +1,19 @@
+/*
+Tablet durumuna geçerken kullanıldıgı yerde içi doldurulacaktır
+*/
+
+@mixin tablet{
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+
+/*
+Telefon durumuna geçerken kullanıldıgı yerde içi doldurulacaktır
+*/
+
+@mixin mobile{
+    @media screen and (max-width:540px) {
+        @content;
+    }
+}
